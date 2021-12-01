@@ -674,9 +674,17 @@ img{
 }
 
 
-#membership .membership-item .membership-pricing{
+#membership .membership-item .membership-pricing.bg1{
     height: 120px;
     background: url(../images/membership/1.jpg) no-repeat center / cover;
+    z-index: 1;
+}
+#membership .membership-item .bg2{
+    background: url(../images/membership/2.jpg) no-repeat center / cover;
+    z-index: 1;
+}
+#membership .membership-item .bg3{
+    background: url(../images/membership/3.jpg) no-repeat center / cover;
     z-index: 1;
 }
 #membership .membership-item .membership-pricing::after{
