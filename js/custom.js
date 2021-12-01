@@ -6,8 +6,16 @@ $(document).ready(function(){
       arrows: false,
       dots: true,
   });
-
+  
+  // gallery venobox   =============;
   $('.venobox').venobox(); 
+
+  // testimonial slider    =============;
+  $('.testimonial-slider').slick({
+    arrows: false,
+    slidesToShow: 2,
+    dots: true,
+  });
  
 
 })

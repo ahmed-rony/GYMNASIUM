@@ -314,7 +314,7 @@ img{
     position: absolute;
     right: 1px;
     bottom: -50px;
-    /* border-bottom-left-radius: 5px; */
+ /* border-bottom-left-radius: 5px; */
 }
 
 #banner .slick-dots{
@@ -449,3 +449,279 @@ img{
 
 
 /* =============   gallery ends    ==================== */
+
+/* =============   team starts    ==================== */
+
+#team{
+    margin-bottom: 80px;
+}
+
+#team .team-item{
+    margin-top: 65px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#team .team-item:hover{
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+#team .team-item .card{
+    width: 270px;
+    border: 1px solid transparent;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#team .team-item:hover .card{
+    border: 1px solid #dddddd !important;
+}
+#team .team-item .card .card-body h5:last-of-type{
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+#team .team-item .team-image .team-overlay{
+    background: var(--overlayR60);
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    transform: scale(0.90);
+    -webkit-transform: scale(0.90);
+    -moz-transform: scale(0.90);
+    -ms-transform: scale(0.90);
+    -o-transform: scale(0.90);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#team .team-item:hover .team-image .team-overlay{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(0.93);
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    -o-transform: scale(0.93);
+    
+}
+
+#team .team-item .team-image .team-overlay a{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#team .team-item .team-image .team-overlay a i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+#team .team-item .team-image .team-overlay a:hover i{
+    color: var(--c1d);
+}
+#team .team-item .card-text{
+    visibility: hidden;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    opacity: 0;
+}
+#team .team-item:hover .card-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* =============   team   ends    ==================== */
+
+/* =============   testimonial starts   ================= */
+
+#testimonial{
+    margin-bottom: 80px;
+    
+}
+
+#testimonial .testimonial-bg{
+    background: url(../images/testimonial/gymnasium.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-top: 20px;
+}
+#testimonial .testimonial-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#testimonial .testimonial-bg i{
+    color: var(--brand);
+    font-size: 14px;
+    margin-right: -2px;
+}
+
+
+#testimonial .testimonial-item p{
+    color: var(--cf1);
+    padding-top: 5px;
+    padding-right:30px;
+    line-height: 18px;
+}
+#testimonial .testimonial-bg .testimonial-item .testimonial-details{
+    margin-left: 10px;
+}
+#testimonial .testimonial-bg .testimonial-details h5{
+    padding: 5px 0;
+}
+
+
+#testimonial .slick-dots{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    padding-left: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    
+}
+#testimonial .slick-dots li{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#testimonial .slick-dots li:last-child{
+    margin-right: 0;
+}
+#testimonial .slick-dots li.slick-active{
+    background: var(--brand);
+    border-color: var(--brand);
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+#testimonial .slick-dots li button{
+   font-size: 0;
+   border: none;
+   outline: none;
+}
+
+
+/* =============   testimonial ends   ================= */
+
+/* =============   membership starts   ================= */
+
+#membership{
+    margin-bottom: 80px;
+}
+
+#membership .membership-item{
+    margin-top: 20px;
+}
+
+
+#membership .membership-item .membership-head h4{
+    color: var(--c35);
+    background: #dddddd;
+    line-height: 54px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#membership .membership-item:hover .membership-head h4{
+    background: var(--brand);
+    color: #ffffff;
+}
+
+
+#membership .membership-item .membership-pricing{
+    height: 120px;
+    background: url(../images/membership/1.jpg) no-repeat center / cover;
+    z-index: 1;
+}
+#membership .membership-item .membership-pricing::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--overlayB80);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#membership .membership-item .membership-pricing h2{
+    line-height: 120px;
+}
+
+#membership .membership-item .membership-features{
+    background: var(--cf1);
+    color: var(--c55);
+}
+
+#membership .membership-item .membership-features ul li{
+    padding-top: 20px;
+}
+#membership .membership-item .membership-features ul li:first-of-type{
+    padding-top: 35px;
+}
+#membership .membership-item .membership-features ul li:last-of-type{
+    padding-bottom: 35px;
+}
+#membership .membership-item .membership-btn a{
+    background: #dddddd;
+    color: var(--c35);
+    line-height: 34px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#membership .membership-item:hover .membership-btn a{
+    background: var(--brand);
+    color: var(--cff);
+}
+
+
+
+
+/* =============   membership ends   ================= */
