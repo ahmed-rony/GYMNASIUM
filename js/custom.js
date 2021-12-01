@@ -16,6 +16,9 @@ $(document).ready(function(){
     slidesToShow: 2,
     dots: true,
   });
+
+  // funfact counter Up;
+  $('.counter').counterUp();
  
 
 })
