@@ -88,6 +88,10 @@ img{
 .fw-b{
     font-weight: 700;
 }
+.c35{
+    color: var(--c35);
+}
+
 
 
 .container{
@@ -740,6 +744,7 @@ img{
     position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 80px;
 }
 #funfact::after{
     content: '';
@@ -754,3 +759,131 @@ img{
 
 
 /* =============   funfact ends   ================= */
+
+/* =============   class starts   ================= */
+
+#class{
+    margin-bottom: 80px;
+}
+#class .routine-nav{
+    margin-top: 25px;
+}
+
+#class .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border-color: transparent !important;
+}
+#class .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border-color: transparent !important; 
+}
+#class .nav-tabs .nav-link{
+    background: var(--cf1) !important;
+    color: var(--c35);
+    line-height: 51px;
+    padding: 0 !important;
+    width: 186px;
+}
+#class .nav-tabs .nav-link.active{
+    background: var(--brand) !important;
+    color: white;
+    /* ========================================                      ============================================ */
+}
+
+#class .routine-main{
+    margin-top: 30px;
+}
+#class .routine-main ul li{
+    width: 20%;
+    background: var(--cf1);
+    padding: 50px 0;
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+
+#class .routine-main ul li.active{
+    background: var(--brand);
+    color: #ffffff;
+}
+
+
+/* =============   class   ends   ================= */
+
+/* =============   brand   starts   ================= */
+#brand{
+    position: relative;
+    margin-bottom: 70px;
+    
+}
+
+#brand .brand-item{
+    height: 100px;
+    margin: 0 15px;
+    background: #35d1bc;
+}
+
+/* #brand .brand-item .slick-list{
+    padding: 10px !important;
+} */
+/* #brand .brand-slider .slick-center{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+} */
+
+#brand .prev-arrow{
+    color: var(--c35);
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: -30px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 99;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#brand .prev-arrow:hover{
+    color: var(--brand);
+}
+
+
+#brand .next-arrow{
+    color: var(--c35);
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: -30px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 99;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#brand .next-arrow:hover{
+    color: var(--brand);
+}
+/* =============   brand   ends     ================= */
+.test-main{
+    border: 1px solid #000;
+}
+.test-main .test-item{
+    height: 100px;
+    background: #e41b1b;
+    margin-right: 30px;
+}
