@@ -91,6 +91,12 @@ img{
 .c35{
     color: var(--c35);
 }
+.cf1{
+    color: var(--cf1);
+}
+.cbrand{
+    color: var(--brand);
+}
 
 
 
@@ -110,10 +116,26 @@ img{
 
 .navbar{
     background: rgba(53, 53, 53, 0.25);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 9999;
+}
+.nav-fix{
     position: fixed;
     top: 30px;
     left: 0;
     z-index: 99999;
+    animation: navfix 1s linear;
+    -webkit-animation: navfix 1s linear;
+}
+@keyframes navfix{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 30px;
+    }
 }
 
 .navbar .navbar-brand{
@@ -676,10 +698,12 @@ img{
     background: var(--brand);
     color: #ffffff;
 }
+#membership .membership-item .membership-pricing{
+    height: 120px;
 
+}
 
 #membership .membership-item .membership-pricing.bg1{
-    height: 120px;
     background: url(../images/membership/1.jpg) no-repeat center / cover;
     z-index: 1;
 }
@@ -750,7 +774,7 @@ img{
     content: '';
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -763,7 +787,7 @@ img{
 /* =============   class starts   ================= */
 
 #class{
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 #class .routine-nav{
     margin-top: 25px;
@@ -775,6 +799,10 @@ img{
 #class .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
     border-color: transparent !important; 
 }
+#class .nav-tabs .nav-item .nav-link.active{
+    background: var(--brand) !important;
+    color: #ffffff;
+}
 #class .nav-tabs .nav-link{
     background: var(--cf1) !important;
     color: var(--c35);
@@ -782,11 +810,7 @@ img{
     padding: 0 !important;
     width: 186px;
 }
-#class .nav-tabs .nav-link.active{
-    background: var(--brand) !important;
-    color: white;
-    /* ========================================                      ============================================ */
-}
+
 
 #class .routine-main{
     margin-top: 30px;
@@ -802,11 +826,15 @@ img{
     -o-transform: scale(0.98);
 }
 
+
 #class .routine-main ul li.active{
     background: var(--brand);
     color: #ffffff;
 }
 
+#class .routine-main ul li.active p{
+    color: white !important;
+}
 
 /* =============   class   ends   ================= */
 
@@ -817,18 +845,19 @@ img{
     
 }
 
-#brand .brand-item{
-    height: 100px;
+
+#brand .brand-slider .slick-slide{
     margin: 0 15px;
-    background: #35d1bc;
+    
 }
 
-/* #brand .brand-item .slick-list{
-    padding: 10px !important;
-} */
-/* #brand .brand-slider .slick-center{
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-} */
+#brand .brand-slider .slick-track{
+    margin: 10px 0;
+}
+
+#brand .brand-slider .slick-center{
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
+}
 
 #brand .prev-arrow{
     color: var(--c35);
@@ -879,11 +908,120 @@ img{
     color: var(--brand);
 }
 /* =============   brand   ends     ================= */
-.test-main{
-    border: 1px solid #000;
+
+/* =============   footer starts     ================= */
+
+footer{
+    background: url(../images/footer-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
 }
-.test-main .test-item{
-    height: 100px;
-    background: #e41b1b;
-    margin-right: 30px;
+footer::before{ 
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;inset: 0;
+    z-index: -1;
+}
+
+footer .footer-logo{
+    line-height: 125px;
+    border-bottom: 1px solid #ffffff;
+}
+footer .footer-main{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffffff;
+}
+footer .footer-item{
+    margin-top: 30px;
+    position: relative;
+}
+footer .footer-item ul{
+    margin-top: 25px;
+}
+footer .footer-item ul li{
+    color: var(--cf1);
+}
+footer .item-1 ul li{
+    padding-bottom: 4px;
+}
+footer .item-1 ul li:last-child{
+    padding-bottom: 0;
+}
+footer .footer-item ul .time{
+    position: absolute;
+    right: 30px;
+    
+}
+footer .footer-item ul .time1{
+    position: absolute;
+    right: 126px;
+    
+}
+
+footer .item-2 ul .icon{
+    position: absolute;
+    color: var(--c1d);
+}
+footer .item-2 ul li:last-child{
+    margin-top: 25px;
+}
+footer .item-2 ul li p{
+    padding-left: 26px;
+    line-height: 18px;
+}
+
+footer .item-3 .mt{
+    margin-top: 10px;
+}
+footer .item-4 ul{
+    position: relative;
+}
+footer .item-4 ul li .con-icon{
+    position: absolute;
+    color: var(--brand);
+}
+footer .item-4 ul li p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+footer .item-4 ul li.social-links{
+    margin: 20px 0;
+}
+footer .item-4 ul li a i{
+    color: var(--cf1);
+    padding: 0 10px;
+    line-height: 30px;
+    border: 1px solid var(--cf1);
+    box-sizing: border-box;
+    margin-right: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+footer .item-4 ul li a i:hover{
+    background: var(--brand);
+    border-color: var(--brand);
+}
+footer .footer-end p{
+    line-height: 53px;
+}
+
+/* =============   footer   ends     ================= */
+
+/* =============   back to top   ends     ================= */
+/* =============   back to top   ends     ================= */
+
+.back-to-top i{
+    font-size: 35px;
+    color: rgba(226, 62, 56, 0.9);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 9999999;
+    cursor: pointer;
+    display: none;
 }
