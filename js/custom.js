@@ -36,7 +36,7 @@ $(document).ready(function(){
   $('.banner-slider').slick({
       arrows: false,
       dots: true,
-      // autoplay: true,
+      autoplay: true,
   });
   
   // gallery venobox   =============;
@@ -47,10 +47,21 @@ $(document).ready(function(){
     arrows: false,
     slidesToShow: 2,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        }
+      },
+    ],
   });
 
-  // funfact counter Up;
+  // funfact counter Up    =============;
   $('.counter').counterUp();
 
   // brand slider    ==================;
@@ -61,6 +72,35 @@ $(document).ready(function(){
     centerPadding: '0px',
     prevArrow: '<i class="fas fa-chevron-left slick-prev prev-arrow"></i>',
     nextArrow: '<i class="fas fa-chevron-right slick-next next-arrow"></i>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        }
+      },
+    ],
   })
 
  

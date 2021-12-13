@@ -15,17 +15,20 @@
     <link rel="stylesheet" href="css/venobox.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- media/responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
     <!-- ==========   navbar starts   =============== -->
-    <nav class="navbar navbar-expand-lg navbar-light w-100 py-0">
+    <nav class="navbar navbar-expand-md navbar-light w-100 py-0">
       <div class="container">
         <a class="navbar-brand py-0" href="#">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -53,6 +56,7 @@
             <li class="nav-item">
               <a class="nav-link oswald fs-14 fw-r" href="#">contact</a>
             </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -61,9 +65,10 @@
     <!-- ================    banner starts   ===================== -->
     <section id="banner">
       <div class="banner-slider">
+
         <div class="banner-item bg1">
           <div class="container">
-            <div class="col-lg-6 m-lg-auto">
+            <div class="col-lg-6 m-lg-auto col-md-12 col-sm-12 col-12">
               <div class="banner-text text-center">
                 <h3 class="oswald fw-b fs-30 text-uppercase text-white mb-0 position-relative">time to start</h3>
                 <h1 class="oswald fw-b fs-60 text-uppercase mb-0">gymnasium</h1>
@@ -73,12 +78,11 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="banner-item bg2">
           <div class="container">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="banner-text">
                 <h3 class="oswald fw-b fs-30 text-uppercase text-white mb-0">time to start</h3>
                 <h1 class="oswald fw-b fs-60 text-uppercase mb-0">gymnasium</h1>
@@ -92,7 +96,7 @@
 
         <div class="banner-item bg3">
           <div class="container">
-            <div class="col-lg-6 ms-lg-auto">
+            <div class="col-lg-6 ms-lg-auto col-md-12 col-sm-12 col-12">
               <div class="banner-text text-end">
                 <h3 class="oswald fw-b fs-30 text-uppercase text-white mb-0">time to start</h3>
                 <h1 class="oswald fw-b fs-60 text-uppercase mb-0">gymnasium</h1>
@@ -111,7 +115,7 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-2 order-lg-1 col-md-12 order-2 order-md-5 col-sm-12 order-4 order-sm-6">
             <div class="about-video position-relative">
               <img src="images/about-img.jpg" alt="about-image" class="img-fluid w-100">
               <div class="about-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
@@ -120,7 +124,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-1 order-lg-2 col-md-12 order-3  order-md-2 col-sm-12 order-1 order-sm-1">
             <div class="about-details text-center">
               <header class="section-head text-center">
                 <h3 class="mb-0 text-uppercase oswald fw-r fs-22">about us</h3>
@@ -146,7 +150,7 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               
               <div class="gallery-item position-relative">
                 <img src="images/gallery/gallery1.jpg" alt="image" class="img-fluid w-100">
@@ -168,7 +172,7 @@
 
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               
               <div class="gallery-item position-relative">
                 <img src="images/gallery/gallery2.jpg" alt="image" class="img-fluid w-100">
@@ -190,7 +194,7 @@
 
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-6 d-md-none d-lg-block">
               
               <div class="gallery-item position-relative">
                 <img src="images/gallery/gallery3.jpg" alt="image" class="img-fluid w-100">
@@ -231,12 +235,12 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="team-item">
 
-              <div class="card">
+              <div class="card w-100">
                 <div class="team-image position-relative">
-                  <img src="images/team/team1.jpg" class="card-img-top img-fluid w-100" alt="team member">
+                  <img src="images/team/team1.jpg" class="card-img-top img-fluid" alt="team member">
                   <div class="team-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-end">
                     <a href="#" class="btn btn-outline-light rounded-0 p-0">
                       <i class="fab fa-facebook-f"></i>
@@ -259,10 +263,10 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="team-item">
 
-              <div class="card">
+              <div class="card w-100">
                 <div class="team-image position-relative">
                   <img src="images/team/team2.jpg" class="card-img-top img-fluid w-100" alt="team member">
                   <div class="team-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-end">
@@ -287,10 +291,10 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="team-item">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team-item l-two">
 
-              <div class="card">
+              <div class="card w-100">
                 <div class="team-image position-relative">
                   <img src="images/team/team3.jpg" class="card-img-top img-fluid w-100" alt="team member">
                   <div class="team-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-end">
@@ -315,10 +319,10 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="team-item">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team-item l-two">
 
-              <div class="card">
+              <div class="card w-100">
                 <div class="team-image position-relative">
                   <img src="images/team/team4.jpg" class="card-img-top img-fluid w-100" alt="team member">
                   <div class="team-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-end">
@@ -364,29 +368,26 @@
           <div class="testimonial-slider">
 
             <div class="testimonial-item position-relative">
-              <div class="row gx-0">
-                <div class="col-lg-12">
-                
-                  <div class="testimonial-image d-inline-block">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="testimonial-image d-inline-block">
                     <img src="images/testimonial/1.jpg" alt="testimonial-image" class="img-fluid">
-                  </div>
-                  <div class="testimonial-details d-inline-block">
-                    <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">Mridul Chakrabarty</h4>
-                    <h5 class="mb-0 text-capitalize text-white oswald fw-r fs-14">gymnast</h5>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <p class="mb-0 opensans fw-r fs-13">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printertook a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries are not possible.</p>
                 </div>
+                <div class="testimonial-details d-inline-block">
+                  <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">Mridul Chakrabarty</h4>
+                  <h5 class="mb-0 text-capitalize text-white oswald fw-r fs-14">gymnast</h5>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                  <p class="mb-0 opensans fw-r fs-13">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printertook a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries are not possible.</p>
               </div>
-              
+
             </div>
 
             <div class="testimonial-item position-relative">
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="testimonial-image d-inline-block">
                   <img src="images/testimonial/2.jpg" alt="testimonial-image" class="img-fluid">
                 </div>
@@ -404,7 +405,7 @@
             </div>
 
             <div class="testimonial-item position-relative">
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="testimonial-image d-inline-block">
                   <img src="images/testimonial/1.jpg" alt="testimonial-image" class="img-fluid">
                 </div>
@@ -445,8 +446,8 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4">
-            <div class="membership-item text-center">
+          <div class="col-lg-4 col-md-4 col-sm-10 ">
+            <div class="membership-item text-center ">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">regular membership</h3>
               </div>
@@ -469,7 +470,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-10">
             <div class="membership-item text-center">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">professional membership</h3>
@@ -493,7 +494,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-10">
             <div class="membership-item text-center">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">standard membership</h3>
@@ -531,34 +532,34 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-2">
-            <div class="funfact-item">
+          <div class="col-lg-2 col-md-2 col-sm-4">
+            <div class="funfact-item text-sm-center">
               <h4 class="mb-0 text-white oswald fw-b fs-40 counter">261</h4>
               <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">cup of tea</p>
             </div>
           </div>
-          <div class="col-lg-2">
-            <div class="funfact-item text-lg-center">
-              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">261</h4>
-              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">cup of tea</p>
+          <div class="col-lg-2 col-md-2 col-sm-4">
+            <div class="funfact-item text-lg-center text-md-end text-sm-center">
+              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">518</h4>
+              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">award win</p>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="funfact-item text-lg-center">
-              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">261</h4>
-              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">cup of tea</p>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="funfact-item text-lg-center text-md-center text-sm-center">
+              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">999</h4>
+              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">happy clints</p>
             </div>
           </div>
-          <div class="col-lg-2 text-lg-center">
-            <div class="funfact-item">
-              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">261</h4>
-              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">cup of tea</p>
+          <div class="col-lg-2 col-md-2 col-sm-6">
+            <div class="funfact-item text-lg-center text-sm-center">
+              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">369</h4>
+              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">course complete</p>
             </div>
           </div>
-          <div class="col-lg-2">
-            <div class="funfact-item text-lg-end">
-              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">261</h4>
-              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">cup of tea</p>
+          <div class="col-lg-2 col-md-2 col-sm-6">
+            <div class="funfact-item text-lg-end text-md-end text-sm-center">
+              <h4 class="mb-0 text-white oswald fw-b fs-40 counter">209</h4>
+              <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">partner gym</p>
             </div>
           </div>
 
@@ -578,24 +579,24 @@
       </header>
 
       <div class="container">
-        <div class="routine-nav">
-          <ul class="nav nav-tabs border-0 " id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
+        <div class="routine-nav ">
+          <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item col-lg-2 col-md-4 col-sm-4" role="presentation">
               <button class="nav-link active text-uppercase oswald fw-r fs-14 rounded-0" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday" type="button" role="tab" aria-controls="monday" aria-selected="true">monday</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item col-lg-2 col-md-4 col-sm-4" role="presentation">
               <button class="nav-link text-uppercase oswald fw-r fs-14 rounded-0" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday" type="button" role="tab" aria-controls="tuesday" aria-selected="false">tuesday</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item col-lg-2 col-md-4 col-sm-4" role="presentation">
               <button class="nav-link text-uppercase oswald fw-r fs-14 rounded-0" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday" type="button" role="tab" aria-controls="wednesday" aria-selected="false">wednesday</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item col-lg-2 col-md-4 col-sm-4" role="presentation">
               <button class="nav-link text-uppercase oswald fw-r fs-14 rounded-0" id="thirsday-tab" data-bs-toggle="tab" data-bs-target="#thirsday" type="button" role="tab" aria-controls="thirsday" aria-selected="false">thirsday</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item col-lg-2 col-md-4 col-sm-4" role="presentation">
               <button class="nav-link text-uppercase oswald fw-r fs-14 rounded-0" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday" type="button" role="tab" aria-controls="friday" aria-selected="false">friday</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item col-lg-2 col-md-4 col-sm-4" role="presentation">
               <button class="nav-link text-uppercase oswald fw-r fs-14 rounded-0" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday" type="button" role="tab" aria-controls="saturday" aria-selected="false">saturday</button>
             </li>
           </ul>
@@ -961,26 +962,23 @@
             <div class="brand-slider">
 
               <div class="brand-item">
-                <img src="images/content sites/1.jpg" alt="brand image" class="img-fluid h-100">
+                <img src="images/content sites/1.jpg" alt="brand image" class="img-fluid">
               </div>
               <div class="brand-item">
-                <img src="images/content sites/2.jpg" alt="brand image" class="img-fluid h-100">
+                <img src="images/content sites/2.jpg" alt="brand image" class="img-fluid">
               </div>
               <div class="brand-item">
-                <img src="images/content sites/3.jpg" alt="brand image" class="img-fluid h-100">
+                <img src="images/content sites/3.jpg" alt="brand image" class="img-fluid">
               </div>
               <div class="brand-item">
-                <img src="images/content sites/4.jpg" alt="brand image" class="img-fluid h-100">
+                <img src="images/content sites/4.jpg" alt="brand image" class="img-fluid">
               </div>
               <div class="brand-item">
-                <img src="images/content sites/5.jpg" alt="brand image" class="img-fluid h-100">
+                <img src="images/content sites/5.jpg" alt="brand image" class="img-fluid">
               </div>
               <div class="brand-item">
-                <img src="images/content sites/3.jpg" alt="brand image" class="img-fluid h-100">
+                <img src="images/content sites/3.jpg" alt="brand image" class="img-fluid">
               </div>
-              
-
-              
               
             </div>
           </div>
@@ -1004,7 +1002,7 @@
           <div class="container">
             <div class="row">
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-item item-1">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">opening hours</h4>
                   <ul class="ps-0 mb-0">
@@ -1020,7 +1018,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-item item-2">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">twitter feed</h4>
                   <ul class="ps-0 mb-0">
@@ -1036,33 +1034,33 @@
                 </div>
               </div>
 
-              <div class="col-lg-3">
-                <div class="footer-item item-3">
+              <div class="col-lg-3 col-md-6 col-sm-10">
+                <div class="footer-item item-3 col-lg-12 col-md-11">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">flicker photos</h4>
                   <ul class="ps-0 mb-0 d-flex flex-wrap justify-content-lg-between">
-                    <li><a href="#"><img src="images/footer gallery/1.jpg" alt="image"></a></li>
-                    <li><a href="#"><img src="images/footer gallery/2.jpg" alt="image"></a></li>
-                    <li><a href="#"><img src="images/footer gallery/3.jpg" alt="image"></a></li>
-                    <li><a href="#"><img src="images/footer gallery/4.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/5.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/6.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/7.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/8.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/9.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/10.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/11.jpg" alt="image"></a></li>
-                    <li class="mt"><a href="#"><img src="images/footer gallery/12.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/1.jpg"><img src="images/footer gallery/1.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/2.jpg"><img src="images/footer gallery/2.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/3.jpg"><img src="images/footer gallery/3.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/4.jpg"><img src="images/footer gallery/4.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/5.jpg"><img src="images/footer gallery/5.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/6.jpg"><img src="images/footer gallery/6.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/7.jpg"><img src="images/footer gallery/7.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/8.jpg"><img src="images/footer gallery/8.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/9.jpg"><img src="images/footer gallery/9.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/10.jpg"><img src="images/footer gallery/10.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/11.jpg"><img src="images/footer gallery/11.jpg" alt="image"></a></li>
+                    <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/12.jpg"><img src="images/footer gallery/12.jpg" alt="image"></a></li>
                   </ul>
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6 col">
                 <div class="footer-item item-4">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">contact</h4>
                   <ul class="ps-0 mb-0">
-                    <li class=" text-capitalize opensans fw-r fs-13"><span class="con-icon"><i class="fas fa-map-marker-alt"></i></span><p class="mb-0">1234 Park Street Avenue, NY City America.</p></li>
-                    <li class=" text-capitalize opensans fw-r fs-13"><span class="con-icon"><i class="fas fa-map-marker-alt"></i></span><p class="mb-0">+88 017 386 96914, +88 017 419 69683</p></li>
-                    <li class=" text-capitalize opensans fw-r fs-13"><span class="con-icon"><i class="fas fa-envelope"></i></span> <p class="mb-0">info@admin.com, admin@info.com</p></li>
+                    <li class=" text-capitalize opensans fw-r fs-13"><span class="con-icon"><i class="fas fa-map-marker-alt"></i></span><a href="https://goo.gl/maps/S8sCPQs9retbqFLi8" class="venobox contact1" data-vbtype="iframe"><p class="mb-0">1234 Park Street Avenue, NY City America.</p></a></li>
+                    <li class=" text-capitalize opensans fw-r fs-13"><span class="con-icon"><i class="fas fa-phone s-child"></i></span><a href="tel:+88 017 386 96914" class="contact1"><p class="mb-0 d-inline-block">+88 017 386 96914,</p></a>&nbsp;&nbsp;<a href="tel:+88 017 419 69683" class="contact1"><p class="mb-0 d-inline-block l-child">+88 017 419 69683</p></a></li>
+                    <li class=" text-capitalize opensans fw-r fs-13"><span class="con-icon"><i class="fas fa-envelope s-child"></i></span><a href="mailto:info@admin.com" class="contact1"><p class="mb-0 d-inline-block">info@admin.com,</p></a>&nbsp;&nbsp;<a href="mailto:admin@info.com" class="contact1"><p class="mb-0 d-inline-block l-child">admin@info.com</p></a> </li>
                     <li class=" text-uppercase oswald fw-r fs-14 social-links">get social</li>
                     
                     <li class=" fs-13">
@@ -1081,8 +1079,8 @@
           </div>
 
         </div>
-        <div class="footer-end text-center">
-          <p class="mb-0 opensans fw-r fs-13 cf1">Copyright &copy; All rights reserved by <span class="cbrand">GYMNASIUM</span></p>
+        <div class="footer-end text-center ">
+          <p class="mb-0 opensans fw-r fs-13 cf1">Copyright &copy; All rights reserved by <span ><a href="index.html">GYMNASIUM</a></span></p>
         </div>
       </footer>
 
