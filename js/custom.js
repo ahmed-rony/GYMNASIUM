@@ -67,7 +67,7 @@ $(document).ready(function(){
   // brand slider    ==================;
   $('.brand-slider').slick({
     slidesToShow: 5,
-    // autoplay: true,
+    autoplay: true,
     centerMode: true,
     centerPadding: '0px',
     prevArrow: '<i class="fas fa-chevron-left slick-prev prev-arrow"></i>',

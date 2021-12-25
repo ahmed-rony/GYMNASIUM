@@ -35,7 +35,6 @@
     }
     .navbar-light .navbar-nav .nav-link.active::before{
         height: 100%;
-        /* width: 100%; */
     }
     .navbar-light .navbar-nav .nav-link::before{
         width: 100%;

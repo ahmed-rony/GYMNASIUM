@@ -1035,7 +1035,6 @@ footer .footer-end a{
 /* =============   footer   ends     ================= */
 
 /* =============   back to top   ends     ================= */
-/* =============   back to top   ends     ================= */
 .back-to-top{
     display: none;
 
@@ -1049,3 +1048,5 @@ footer .footer-end a{
     z-index: 9999999;
     cursor: pointer;
 }
+
+/* =============   back to top   ends     ================= */
