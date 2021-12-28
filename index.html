@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
+  <div class="main" id="butter">
+    
     <!-- ==========   navbar starts   =============== -->
     <nav class="navbar navbar-expand-md navbar-light w-100 py-0 wow animate__animated animate__fadeIn">
       <div class="container">
@@ -141,8 +142,8 @@
     </section>
     <!-- ================    about ends     ===================== -->
     <!-- ================    gallery starts     ===================== -->
-    <section id="gallery" class="wow animate__animated animate__fadeInUp">
-      <header class="section-head text-center ">
+    <section id="gallery">
+      <header class="section-head text-center wow animate__animated animate__fadeInUp">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">our gallery</h3>
         <img src="images/big-header.png" alt="gallery-header">
       </header>
@@ -174,7 +175,7 @@
 
             <div class="col-lg-4 col-md-6 col-sm-6">
               
-              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-1s">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp">
                 <img src="images/gallery/gallery2.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery2.jpg">
@@ -183,7 +184,7 @@
                 </div>
               </div>
 
-              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-1s">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp">
                 <img src="images/gallery/gallery5.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery5.jpg">
@@ -196,7 +197,7 @@
 
             <div class="col-lg-4 col-md-6 col-sm-6 d-sm-none d-md-none d-lg-block">
               
-              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp">
                 <img src="images/gallery/gallery3.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery3.jpg">
@@ -205,7 +206,7 @@
                 </div>
               </div>
 
-              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp">
                 <img src="images/gallery/gallery6.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery6.jpg">
@@ -236,7 +237,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item wow animate__animated animate__fadeInUp">
+            <div class="team-item wow animate__animated animate__fadeInDown">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -264,7 +265,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item wow animate__animated animate__fadeInUp d-05s">
+            <div class="team-item wow animate__animated animate__fadeInUp">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -292,7 +293,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item l-two wow animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="team-item l-two wow animate__animated animate__fadeInDown ">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -320,7 +321,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item l-two wow animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="team-item l-two wow animate__animated animate__fadeInUp ">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -356,9 +357,9 @@
 
     <!-- ================    testimonial starts       ===================== -->
 
-    <section id="testimonial" class="wow animate__animated animate__slideInUp">
+    <section id="testimonial">
 
-      <header class="section-head text-center">
+      <header class="section-head text-center wow animate__animated animate__fadeInUp">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">testimonial</h3>
         <img src="images/big-header.png" alt="gallery-header">
       </header>
@@ -428,17 +429,13 @@
     </section>
 
    
-    
-
-
-
     <!-- ================    testimonial   ends       ===================== -->
 
     <!-- ================    membership starts       ===================== -->
 
-    <section id="membership" class="wow animate__animated animate__slideInUp">
+    <section id="membership">
 
-      <header class="section-head text-center">
+      <header class="section-head text-center wow animate__animated animate__slideInUp">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">membership</h3>
         <img src="images/big-header.png" alt="gallery-header">
       </header>
@@ -447,7 +444,7 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-4 col-sm-10 ">
-            <div class="membership-item text-center wow animate__animated animate__slideInUp">
+            <div class="membership-item text-center wow animate__animated animate__fadeInUp">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">regular membership</h3>
               </div>
@@ -471,7 +468,7 @@
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-10">
-            <div class="membership-item text-center wow animate__animated animate__slideInUp animate__delay-1s">
+            <div class="membership-item text-center wow animate__animated animate__fadeInUp animate__delay-1s">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">professional membership</h3>
               </div>
@@ -495,7 +492,7 @@
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-10">
-            <div class="membership-item text-center wow animate__animated animate__slideInUp animate__delay-2s">
+            <div class="membership-item text-center wow animate__animated animate__fadeInUp animate__delay-2s">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">standard membership</h3>
               </div>
@@ -528,7 +525,7 @@
     
     <!-- ================    funfact starts       ===================== -->
 
-    <section id="funfact" class="wow animate__animated animate__slideInUp" data-parallax="scroll" data-image-src="images/service-score.jpg">
+    <section id="funfact" data-parallax="scroll" data-image-src="images/service-score.jpg">
       <div class="container">
         <div class="row">
 
@@ -571,15 +568,15 @@
 
     <!-- ================    class starts        ===================== -->
 
-    <section id="class" class="wow animate__animated animate__slideInUp">
+    <section id="class">
 
-      <header class="section-head text-center">
+      <header class="section-head text-center wow animate__animated animate__slideInUp">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">our classes</h3>
         <img src="images/big-header.png" alt="gallery-header">
       </header>
 
       <div class="container">
-        <div class="routine-nav ">
+        <div class="routine-nav wow animate__animated animate__slideInUp">
           <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
             <li class="nav-item col-lg-2 col-md-4 col-sm-4" role="presentation">
               <button class="nav-link active text-uppercase oswald fw-r fs-14 rounded-0" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday" type="button" role="tab" aria-controls="monday" aria-selected="true">monday</button>
@@ -955,7 +952,7 @@
 
     <!-- ================    brand   starts        ===================== -->
 
-    <section id="brand" class="wow animate__animated animate__slideInUp">
+    <section id="brand">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -992,18 +989,18 @@
 
       <footer  data-parallax="scroll" data-image-src="images/footer-bg.jpg">
         <div class="footer-bg text-center">
-          <div class="footer-logo">
+          <div class="footer-logo wow animate__animated animate__fadeInUp">
             <a href="index.html">
               <img src="images/footer-logo.png" alt="footer logo">
             </a>
           </div>
         </div>
-        <div class="footer-main wow animate__animated animate__slideInUp">
+        <div class="footer-main">
           <div class="container">
             <div class="row">
 
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="footer-item item-1 ">
+                <div class="footer-item item-1 wow animate__animated animate__slideInUp">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">opening hours</h4>
                   <ul class="ps-0 mb-0">
                     <li class=" text-capitalize opensans fw-r fs-13">monday <span class="text-uppercase time">05:00 a.m. - 11:00 p.m.</span></li>
@@ -1019,7 +1016,7 @@
               </div>
 
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="footer-item item-2">
+                <div class="footer-item item-2 wow animate__animated animate__slideInUp">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">twitter feed</h4>
                   <ul class="ps-0 mb-0">
                     <li class=" opensans fw-r fs-13"><div class="icon"><i class="fab fa-twitter"></i></div>
@@ -1035,7 +1032,7 @@
               </div>
 
               <div class="col-lg-3 col-md-6 col-sm-10">
-                <div class="footer-item item-3 col-lg-12 col-md-11">
+                <div class="footer-item item-3 col-lg-12 col-md-11 wow animate__animated animate__slideInUp">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">flicker photos</h4>
                   <ul class="ps-0 mb-0 d-flex flex-wrap justify-content-lg-between">
                     <li><a class="venobox" data-gall="gallery01" href="images/footer gallery/1.jpg"><img src="images/footer gallery/1.jpg" alt="image"></a></li>
@@ -1055,7 +1052,7 @@
               </div>
 
               <div class="col-lg-3 col-md-6 col">
-                <div class="footer-item item-4">
+                <div class="footer-item item-4 wow animate__animated animate__slideInUp">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">contact</h4>
                   <ul class="ps-0 mb-0">
                     <li class=" text-capitalize opensans fw-r fs-13"><span class="con-icon"><i class="fas fa-map-marker-alt"></i></span><a href="https://goo.gl/maps/S8sCPQs9retbqFLi8" class="venobox contact1" data-vbtype="iframe"><p class="mb-0">1234 Park Street Avenue, NY City America.</p></a></li>
@@ -1093,6 +1090,8 @@
       <!-- ================    footer   ends          ===================== -->
       
 
+  </div>
+
 
 
 
@@ -1113,6 +1112,7 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/butter.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/custom.js"></script>
 </body>

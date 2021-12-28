@@ -1,6 +1,8 @@
 // navbar activation;
 $(document).ready(function(){
 
+
+  
   // scroll position   ==============;
   $(window).on('scroll',function(){
     var scrolling = $(this).scrollTop();
@@ -50,7 +52,25 @@ $(document).ready(function(){
     autoplay: true,
     responsive: [
       {
-        breakpoint: 577,
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -115,6 +135,19 @@ $(document).ready(function(){
   // wow js   ==================;
   
   new WOW().init();
+
+
+  // smooth momentum scrolling    ===========;
+
+  butter.init({
+    wrapperId: 'butter',
+    wrapperDamper: 0.06,
+    cancelOnTouch: true,
+  });
+
+
+
+    
 
  
 
