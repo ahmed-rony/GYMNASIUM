@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gymnasium</title>
     <!-- google fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +13,8 @@
     <!-- plugins css -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/venobox.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- media/responsive css -->
@@ -21,7 +23,7 @@
 <body>
 
     <!-- ==========   navbar starts   =============== -->
-    <nav class="navbar navbar-expand-md navbar-light w-100 py-0">
+    <nav class="navbar navbar-expand-md navbar-light w-100 py-0 wow animate__animated animate__fadeIn">
       <div class="container">
         <a class="navbar-brand py-0" href="#">
             <img src="images/logo.png" alt="logo" class="img-fluid">
@@ -65,7 +67,7 @@
     <section id="banner">
       <div class="banner-slider">
 
-        <div class="banner-item bg1">
+        <div class="banner-item bg1 ">
           <div class="container">
             <div class="col-lg-6 m-lg-auto col-md-12 col-sm-12 col-12">
               <div class="banner-text text-center">
@@ -112,19 +114,18 @@
 
     <!-- ================    about starts     ===================== -->
     <section id="about">
-      <div class="container">
+      <div class="container wow animate__animated animate__fadeInUp">
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1 col-md-12 order-2 order-md-5 col-sm-12 order-4 order-sm-6">
-            <div class="about-video position-relative">
+            <div class="about-video position-relative wow animate__animated animate__fadeInLeft">
               <img src="images/about-img.jpg" alt="about-image" class="img-fluid w-100">
               <div class="about-overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
                 <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=eaRQF-7hhmo"><i class="fas fa-play-circle"></i></a>
-                
               </div>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 col-md-12 order-3  order-md-2 col-sm-12 order-1 order-sm-1">
-            <div class="about-details text-center">
+            <div class="about-details text-center wow animate__animated animate__fadeInRight">
               <header class="section-head text-center">
                 <h3 class="mb-0 text-uppercase oswald fw-r fs-22">about us</h3>
                 <img src="images/small-header.png" alt="about-header">
@@ -140,18 +141,18 @@
     </section>
     <!-- ================    about ends     ===================== -->
     <!-- ================    gallery starts     ===================== -->
-    <section id="gallery">
-      <header class="section-head text-center">
+    <section id="gallery" class="wow animate__animated animate__fadeInUp">
+      <header class="section-head text-center ">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">our gallery</h3>
         <img src="images/big-header.png" alt="gallery-header">
       </header>
-      <div class="gallery-bg">
+      <div class="gallery-bg" data-parallax="scroll" data-image-src="images/gallery/gymnasium.jpg">
         <div class="container">
           <div class="row">
 
             <div class="col-lg-4 col-md-6 col-sm-6">
               
-              <div class="gallery-item position-relative">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp">
                 <img src="images/gallery/gallery1.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery1.jpg">
@@ -160,7 +161,7 @@
                 </div>
               </div>
 
-              <div class="gallery-item position-relative">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp">
                 <img src="images/gallery/gallery4.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery4.jpg">
@@ -173,7 +174,7 @@
 
             <div class="col-lg-4 col-md-6 col-sm-6">
               
-              <div class="gallery-item position-relative">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-1s">
                 <img src="images/gallery/gallery2.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery2.jpg">
@@ -182,7 +183,7 @@
                 </div>
               </div>
 
-              <div class="gallery-item position-relative">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-1s">
                 <img src="images/gallery/gallery5.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery5.jpg">
@@ -193,9 +194,9 @@
 
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 d-md-none d-lg-block">
+            <div class="col-lg-4 col-md-6 col-sm-6 d-sm-none d-md-none d-lg-block">
               
-              <div class="gallery-item position-relative">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-2s">
                 <img src="images/gallery/gallery3.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery3.jpg">
@@ -204,7 +205,7 @@
                 </div>
               </div>
 
-              <div class="gallery-item position-relative">
+              <div class="gallery-item position-relative wow animate__animated animate__fadeInUp animate__delay-2s">
                 <img src="images/gallery/gallery6.jpg" alt="image" class="img-fluid w-100">
                 <div class="gallery-overlay position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
                   <a class="venobox" data-gall="gallery01" href="images/gallery/gallery6.jpg">
@@ -225,7 +226,7 @@
 
     <!-- ================    team starts       ===================== -->
 
-    <section id="team">
+    <section id="team" class="wow animate__animated animate__slideInUp">
 
       <header class="section-head text-center">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">our team</h3>
@@ -235,7 +236,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item">
+            <div class="team-item wow animate__animated animate__fadeInUp">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -263,7 +264,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item">
+            <div class="team-item wow animate__animated animate__fadeInUp d-05s">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -291,7 +292,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item l-two">
+            <div class="team-item l-two wow animate__animated animate__fadeInUp animate__delay-2s">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -319,7 +320,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="team-item l-two">
+            <div class="team-item l-two wow animate__animated animate__fadeInUp animate__delay-3s">
 
               <div class="card w-100">
                 <div class="team-image position-relative">
@@ -355,14 +356,14 @@
 
     <!-- ================    testimonial starts       ===================== -->
 
-    <section id="testimonial">
+    <section id="testimonial" class="wow animate__animated animate__slideInUp">
 
       <header class="section-head text-center">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">testimonial</h3>
         <img src="images/big-header.png" alt="gallery-header">
       </header>
 
-      <div class="testimonial-bg">
+      <div class="testimonial-bg" data-parallax="scroll" data-image-src="images/testimonial/gymnasium.jpg">
         <div class="container">
           <div class="testimonial-slider">
 
@@ -435,7 +436,7 @@
 
     <!-- ================    membership starts       ===================== -->
 
-    <section id="membership">
+    <section id="membership" class="wow animate__animated animate__slideInUp">
 
       <header class="section-head text-center">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">membership</h3>
@@ -446,7 +447,7 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-4 col-sm-10 ">
-            <div class="membership-item text-center ">
+            <div class="membership-item text-center wow animate__animated animate__slideInUp">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">regular membership</h3>
               </div>
@@ -470,7 +471,7 @@
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-10">
-            <div class="membership-item text-center">
+            <div class="membership-item text-center wow animate__animated animate__slideInUp animate__delay-1s">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">professional membership</h3>
               </div>
@@ -494,7 +495,7 @@
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-10">
-            <div class="membership-item text-center">
+            <div class="membership-item text-center wow animate__animated animate__slideInUp animate__delay-2s">
               <div class="membership-head">
                 <h4 class="mb-0 text-uppercase oswald fw-b fs-16">standard membership</h3>
               </div>
@@ -527,36 +528,36 @@
     
     <!-- ================    funfact starts       ===================== -->
 
-    <section id="funfact">
+    <section id="funfact" class="wow animate__animated animate__slideInUp" data-parallax="scroll" data-image-src="images/service-score.jpg">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-2 col-md-2 col-sm-4">
-            <div class="funfact-item text-sm-center">
+            <div class="funfact-item text-sm-center wow animate__animated animate__fadeInLeft">
               <h4 class="mb-0 text-white oswald fw-b fs-40 counter">261</h4>
               <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">cup of tea</p>
             </div>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-4">
-            <div class="funfact-item text-lg-center text-md-end text-sm-center">
+            <div class="funfact-item text-lg-center text-md-end text-sm-center wow animate__animated animate__fadeInLeft">
               <h4 class="mb-0 text-white oswald fw-b fs-40 counter">518</h4>
               <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">award win</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="funfact-item text-lg-center text-md-center text-sm-center">
+            <div class="funfact-item text-lg-center text-md-center text-sm-center wow animate__animated animate__fadeInUp">
               <h4 class="mb-0 text-white oswald fw-b fs-40 counter">999</h4>
               <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">happy clints</p>
             </div>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-6">
-            <div class="funfact-item text-lg-center text-sm-center">
+            <div class="funfact-item text-lg-center text-sm-center wow animate__animated animate__fadeInRight">
               <h4 class="mb-0 text-white oswald fw-b fs-40 counter">369</h4>
               <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">course complete</p>
             </div>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-6">
-            <div class="funfact-item text-lg-end text-md-end text-sm-center">
+            <div class="funfact-item text-lg-end text-md-end text-sm-center wow animate__animated animate__fadeInRight">
               <h4 class="mb-0 text-white oswald fw-b fs-40 counter">209</h4>
               <p class="mb-0 text-capitalize text-white oswald fw-r fs-16">partner gym</p>
             </div>
@@ -570,7 +571,7 @@
 
     <!-- ================    class starts        ===================== -->
 
-    <section id="class">
+    <section id="class" class="wow animate__animated animate__slideInUp">
 
       <header class="section-head text-center">
         <h3 class="mb-0 text-uppercase oswald fw-r fs-22">our classes</h3>
@@ -600,7 +601,7 @@
             </li>
           </ul>
         </div>
-        <div class="routine-main">
+        <div class="routine-main wow animate__animated animate__fadeInUp">
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
               <ul class="ps-0 mb-0 d-flex flex-wrap">
@@ -954,7 +955,7 @@
 
     <!-- ================    brand   starts        ===================== -->
 
-    <section id="brand">
+    <section id="brand" class="wow animate__animated animate__slideInUp">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -989,7 +990,7 @@
 
       <!-- ================    footer   starts        ===================== -->
 
-      <footer>
+      <footer  data-parallax="scroll" data-image-src="images/footer-bg.jpg">
         <div class="footer-bg text-center">
           <div class="footer-logo">
             <a href="index.html">
@@ -997,12 +998,12 @@
             </a>
           </div>
         </div>
-        <div class="footer-main">
+        <div class="footer-main wow animate__animated animate__slideInUp">
           <div class="container">
             <div class="row">
 
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="footer-item item-1">
+                <div class="footer-item item-1 ">
                   <h4 class="mb-0 text-uppercase text-white oswald fw-r fs-14">opening hours</h4>
                   <ul class="ps-0 mb-0">
                     <li class=" text-capitalize opensans fw-r fs-13">monday <span class="text-uppercase time">05:00 a.m. - 11:00 p.m.</span></li>
@@ -1111,6 +1112,8 @@
     <script src="js/slick.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>

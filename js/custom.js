@@ -103,6 +103,19 @@ $(document).ready(function(){
     ],
   })
 
+  // paralax plugin   ==============;
+
+  $('.gallery-bg').parallax({imageSrc: 'images/gallery/gymnasium.jpg'});
+  $('.testimonial-bg').parallax({imageSrc: 'images/testimonial/gymnasium.jpg'});
+  $('#funfact').parallax({imageSrc: 'images/service-score.jpg'});
+  $('footer').parallax({imageSrc: 'images/footer-bg.jpg'});
+
+
+
+  // wow js   ==================;
+  
+  new WOW().init();
+
  
 
 })
